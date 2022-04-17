@@ -8,27 +8,35 @@
 // Space Complexity = O(N)
 
 #include <stdio.h>
+  
+void insert(int arr[], int N, int pos, int element)
+{
+    for (int i = N; i > pos; --i)
+        arr[i] = arr[i-1];
+        
+    arr[pos] = element;
+}
+
 
 int main()
 {
-    int arr[20] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, size = 10;
-    int i, position, element;
-    printf("Enter position and element: ");
-    scanf("%d%d", &position, &element);
-    
-    printf("Array before insert: \n");
-    for (i = 0; i < size; ++i)
-        printf("%d ", arr[i]);
-    
-    for (i = size; i > position; --i)
-        arr[i] = arr[i-1];
-        
-    arr[position] = element;
-    
-    printf("\nArray after insert: \n");
-    for (i = 0; i < size+1; ++i)
-        printf("%d ", arr[i]);
+    int N;
+    printf("Enter size of array: ");
+    scanf("%d",&N);
 
-    
+    int i, arr[N], pos, element;
+
+    printf("Enter %d elements for array: ", N);
+    for(i = 0; i < N; i++)
+        scanf("%d",&arr[i]);
+
+    printf("Enter position and element: ");
+    scanf("%d%d",&pos, &element);
+
+    insert(arr, N, pos, element);
+
+    for(i = 0; i <= N; i++)
+        printf("%d ",arr[i]);
+
     return 0;
 }

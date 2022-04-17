@@ -9,25 +9,33 @@
 
 #include <iostream>
 
-int main()
+void insert(int arr[], int N, int pos, int element)
 {
-    int arr[20] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, size = 10;
-    int i, position, element;
-    std::cout << "Enter position and element: ";
-    std::cin >> position >> element;
-    
-    std::cout << "Array before insert: \n";
-    for (i = 0; i < size; ++i)
-        std::cout << arr[i] << " ";
-    
-    for (i = size; i > position; --i)
+    for (int i = N; i > pos; --i)
         arr[i] = arr[i-1];
         
-    arr[position] = element;
-    
-    std::cout << "\nArray after insert: \n";
-    for (i = 0; i < size+1; ++i)
+    arr[pos] = element;
+}
+
+int main()
+{
+    int N;
+    std::cout << "Enter size of array: ";
+    std::cin >> N;
+
+    int i, arr[N], pos, element;
+
+    std::cout << "Enter " << N << " elements for array: ";
+    for(i = 0; i < N; i++)
+        std::cin >> arr[i];
+
+    std::cout << "Enter position and element: ";
+    std::cin >> pos >> element;
+
+    insert(arr, N, pos, element);
+
+    for(i = 0; i <= N; i++)
         std::cout << arr[i] << " ";
-        
+
     return 0;
 }
