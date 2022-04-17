@@ -5,5 +5,7 @@ Since my formal academic background is Electronics, I have zero knowledge base i
 
 This project is an effort to document my learning journey in Data Structures and Algorithms.
 
-## Chapter 01. Algorithm Complexity and Big O Notation
+## [Chapter 01. Algorithm Complexity and Big O Notation](/ch01/Ch01-Algorithm-Complexity-and-Big-O-Notation.ipynb)
+
+## [Chapter 02. Data Structures in C](/ch02)
 
