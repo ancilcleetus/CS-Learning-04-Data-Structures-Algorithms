@@ -19,6 +19,8 @@ This project is an effort to document my learning journey in Data Structures and
 |4|[Linked List](/ch02-datastructures-in-c/02-linked-list)|[Creation of Linked List](https://log2base2.com/courses/data-structures-in-c/linked-list-basics)|[Solution 01 - C](/ch02-datastructures-in-c/02-linked-list/0001-creation-of-linked-list/creation-of-linked-list-solution-01.c)|O(N)|O(N)|Easy|
 |5|[Linked List](/ch02-datastructures-in-c/02-linked-list)|[Insertion of node at the beginning of a Linked List](https://log2base2.com/courses/data-structures-in-c/inserting-a-node-at-beginning-linked-list)|[Solution 01 - C](/ch02-datastructures-in-c/02-linked-list/0002-insertion-of-node-at-beginning-of-linked-list/insertion-of-node-at-beginning-of-linked-list-solution-01.c)|O(1)|O(N)|Easy|
 |6|[Linked List](/ch02-datastructures-in-c/02-linked-list)|[Insertion of node at the end of a Linked List](https://log2base2.com/courses/data-structures-in-c/inserting-a-node-at-end-linked-list)|[Solution 01 - C](/ch02-datastructures-in-c/02-linked-list/0003-insertion-of-node-at-end-of-linked-list/insertion-of-node-at-end-of-linked-list-solution-01.c)|O(N)|O(N)|Easy|
+|7|[Linked List](/ch02-datastructures-in-c/02-linked-list)|[Insertion of node at the end of a Linked List](https://log2base2.com/courses/data-structures-in-c/deleting-node-linked-list)|[Solution 01 - C](/ch02-datastructures-in-c/02-linked-list/0004-deletion-of-node-from-linked-list/deletion-of-node-from-linked-list-solution-01.c)|Best Case (deletion of head node) -> O(1), Worst Case (deletion of last node) -> O(N)|O(N)|Easy|
+
 
 
 
