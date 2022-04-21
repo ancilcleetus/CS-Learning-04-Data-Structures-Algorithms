@@ -33,7 +33,7 @@ This project is an effort to document my learning journey in Data Structures and
 |2|[Arrays](/ch03-datastructures-in-python/01-arrays)|[Search an element in an Array](https://log2base2.com/courses/data-structures-in-c/searching-an-element-in-array)|[Solution 01 - Python](/ch03-datastructures-in-python/01-arrays/0002-searching-an-element-in-array/searching-an-element-in-array-solution-01.py)|Best Case (found at first index) -> O(1), Worst Case (found at last index or not found) -> O(N)|O(N)|Easy|
 |3|[Arrays](/ch03-datastructures-in-python/01-arrays)|[Remove an element in an Array](https://log2base2.com/courses/data-structures-in-c/removing-an-element-in-array)|[Solution 01 - Python](/ch03-datastructures-in-python/01-arrays/0003-removing-an-element-in-array/removing-an-element-in-array-solution-01.py)|Best Case (element at last index) -> O(1), Worst Case (element at first index) -> O(N)|O(N)|Easy|
 |4|[Singly Linked List](/ch03-datastructures-in-python/02-singly-linked-list)|[Creation of Singly Linked List](https://log2base2.com/courses/data-structures-python/linked-list-basics-in-python)|[Solution 01 - Python](/ch03-datastructures-in-python/02-singly-linked-list/0001-creation-of-linked-list/creation-of-linked-list-solution-01.py)|O(N)|O(N)|Easy|
-
+|5|[Singly Linked List](/ch03-datastructures-in-python/02-singly-linked-list)|[Insertion of node at the beginning of a Linked List](https://log2base2.com/courses/data-structures-python/inserting-a-node-at-the-beginning-of-a-linked-list-in-python)|[Solution 01 - Python](/ch03-datastructures-in-python/02-singly-linked-list/0002-insertion-of-node-at-beginning-of-linked-list/insertion-of-node-at-beginning-of-linked-list-solution-01.py)|O(1)|O(N)|Easy|
 
 
 
