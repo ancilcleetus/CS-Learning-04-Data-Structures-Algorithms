@@ -48,9 +48,9 @@ def search(self, key):
     while node != None:
         if node.data == key:
             return pos
-        else:
-            node = node.next
-            pos += 1
+            
+        node = node.next
+        pos += 1
     
     return -1
 
