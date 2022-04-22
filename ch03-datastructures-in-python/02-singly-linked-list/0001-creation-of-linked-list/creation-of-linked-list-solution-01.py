@@ -14,6 +14,7 @@ class LinkedList:
 
 
 def printList(self):
+    print("Traversing the linked list to print data of each node...")
     node = self.head
 
     while node:

@@ -19,6 +19,7 @@ class LinkedList:
 
 
 def printList(self):
+    print("Traversing the linked list to print data of each node...")
     node = self.head
 
     while node:
@@ -48,7 +49,7 @@ def search(self, key):
     while node != None:
         if node.data == key:
             return pos
-            
+        
         node = node.next
         pos += 1
     
