@@ -1,5 +1,5 @@
 /*
-** Inserts a node at the beginning of a linked list
+** Inserts a node at the beginning of a singly linked list
 */
 
 // Time Complexity = O(1) since no traversal of linked list

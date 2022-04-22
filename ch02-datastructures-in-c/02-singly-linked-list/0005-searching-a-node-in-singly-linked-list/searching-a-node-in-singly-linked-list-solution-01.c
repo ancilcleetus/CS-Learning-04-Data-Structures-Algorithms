@@ -1,9 +1,9 @@
 /*
-** Deletes a node from a linked list
+** Searches a node in a singly linked list
 */
 
-// Best Case Time Complexity = O(1) => when node to be deleted is head node
-// Worst Case Time Complexity = O(N) => when node to be deleted is last node
+// Best Case Time Complexity = O(1) => when node to be found is head node
+// Worst Case Time Complexity = O(N) => when node to be found is last node or node not found
 // Space Complexity = O(1)
 
 #include <stdio.h>
@@ -14,27 +14,19 @@ struct node {
     struct node *next;
 };
 
-void deleteNode(struct node **head, int key) {
-    struct node *temp;
-    if ((*head)->data == key) {
-        temp = *head;
-        *head = (*head)->next;
-        free(temp);
+int searchNode(struct node **head, int key) {
+    struct node *temp = *head;
+    int position = 1;
+    
+    while (temp != NULL) {
+        if (temp->data == key)
+            return position;
+        else
+            temp = temp->next;
+        position += 1;
     }
-    else {
-        struct node *current = *head;
-        while (current->next != NULL) {
-            if (current->next->data == key) {
-                temp = current->next;
-                current->next = current->next->next;
-                free(temp);
-                break;
-            }
-            else {
-                current = current->next;
-            }
-        }
-    }
+    
+    return -1;
 }
 
 void addLast(struct node **head, int val) {
@@ -59,6 +51,7 @@ void printList(struct node *head) {
         printf("%d ", temp->data);
         temp = temp->next;
     }
+    printf("\n");
 }
 
 int main()
@@ -69,13 +62,17 @@ int main()
     addLast(&head, 20);
     addLast(&head, 30);
     
-    int key;
-    printf("Enter data of Node to be deleted: ");
+    printList(head);
+    
+    int key, position;
+    printf("Enter data of Node to be searched: ");
     scanf("%d", &key);
     
-    deleteNode(&head, key);
-    
-    printList(head);
+    position = searchNode(&head, key);
+    if (position == -1)
+        printf("Node not found\n");
+    else
+        printf("Node found at position %d\n", position);
 
     return 0;
 }

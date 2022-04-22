@@ -1,5 +1,5 @@
 /*
-** Inserts a node at the end of a linked list
+** Inserts a node at the end of a singly linked list
 */
 
 // Time Complexity = O(N) since traversal of linked list
