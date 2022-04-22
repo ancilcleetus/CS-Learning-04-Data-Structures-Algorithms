@@ -56,6 +56,7 @@ def delete(self, key):
                     temp = current_node.next
                     current_node.next = current_node.next.next
                     del temp
+                    break
                 else:
                     current_node = current_node.next
             return
