@@ -1,5 +1,5 @@
 /*
-** Searches a node in a singly linked list
+** Searches a node in a doubly linked list
 */
 
 // Best Case Time Complexity = O(1) => when node to be found is head node
@@ -10,6 +10,7 @@
 #include <stdlib.h>
 
 struct node {
+    struct node *prev;
     int data;
     struct node *next;
 };
@@ -34,19 +35,22 @@ void addLast(struct node **head, int val) {
     newNode->data = val;
     newNode->next = NULL;
     
-    if (*head == NULL)
+    if (*head == NULL) {
+        newNode->prev = NULL;
         *head = newNode;
+    }
     else {
         struct node *lastNode = *head;
         while (lastNode->next != NULL)
             lastNode = lastNode->next;
         lastNode->next = newNode;
+        newNode->prev = lastNode;
     }
 }
 
 void printList(struct node *head) {
     struct node *temp = head;
-    printf("Traversing the linked list to print data of each node...\n");
+    printf("Forward Traversal of the linked list...\n");
     while (temp != NULL) {
         printf("%d ", temp->data);
         temp = temp->next;
