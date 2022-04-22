@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-# Searches a node in a linked list
+# Searches a node in a singly linked list
 
-# Best Case Time Complexity = O(1) => when node to be deleted is head node
-# Worst Case Time Complexity = O(N) => when node to be deleted is last node
+# Best Case Time Complexity = O(1) => when node to be found is head node
+# Worst Case Time Complexity = O(N) => when node to be found is last node or node not found
 # Space Complexity = O(1)
 
 
@@ -43,25 +43,17 @@ def addLast(self, val):
         lastNode.next = newNode
 
 
-def delete(self, key):
-    if self.head != None:
-        if self.head.data == key:
-            temp = self.head
-            self.head = self.head.next
-            del temp
-        else:
-            current_node = self.head
-            while current_node.next:
-                if current_node.next.data == key:
-                    temp = current_node.next
-                    current_node.next = current_node.next.next
-                    del temp
-                    break
-                else:
-                    current_node = current_node.next
-            return
-    else:
-        return
+def search(self, key):
+    pos = 1
+    node = self.head
+    while node != None:
+        if node.data == key:
+            return pos
+        
+        node = node.next
+        pos += 1
+    
+    return -1
 
 
 if __name__ == '__main__':
@@ -75,7 +67,10 @@ if __name__ == '__main__':
     addLast(llist, 40)
     printList(llist)
 
-    key = int(input("Enter data of Node to be deleted: "))
-    delete(llist, key)
+    key = int(input("Enter data of Node to be searched: "))
+    pos = search(llist, key)
 
-    printList(llist)
+    if pos == -1:
+        print("Node not found\n")
+    else:
+        print(f"Node found at position {pos}\n")
