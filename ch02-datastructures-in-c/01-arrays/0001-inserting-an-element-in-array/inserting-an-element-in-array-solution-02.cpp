@@ -5,7 +5,7 @@
 
 // Best Case Time Complexity = O(1) => insertion at last index
 // Worst Case Time Complexity = O(N) => insertion at first index
-// Space Complexity = O(N)
+// Space Complexity = O(1)
 
 #include <iostream>
 

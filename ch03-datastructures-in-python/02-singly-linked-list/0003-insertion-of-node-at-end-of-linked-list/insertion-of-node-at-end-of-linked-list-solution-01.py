@@ -28,14 +28,16 @@ def addLast(self, val):
     newNode = Node(val)
 
     # get last node
-    node = self.head
-    if node == None:
+    if self.head == None:
         self.head = newNode
     else:
-        while node.next:
-            node = node.next
+        lastNode = self.head
+
+        while lastNode.next:
+            lastNode = lastNode.next
+            
         # add newNode to last node
-        node.next = newNode
+        lastNode.next = newNode
 
 
 if __name__ == '__main__':
