@@ -2,8 +2,8 @@
 ** Inserts a node at the end of a linked list
 */
 
-// Time Complexity = O(N)
-// Space Complexity = O(N)
+// Time Complexity = O(N) since traversal of linked list
+// Space Complexity = O(1)
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -3,7 +3,7 @@
 # Inserts a node at the end of a linked list
 
 # Time Complexity = O(N) since traversal of linked list
-# Space Complexity = O(N)
+# Space Complexity = O(1)
 
 class Node:
     def __init__(self, data):
@@ -35,7 +35,7 @@ def addLast(self, val):
 
         while lastNode.next:
             lastNode = lastNode.next
-            
+
         # add newNode to last node
         lastNode.next = newNode
 

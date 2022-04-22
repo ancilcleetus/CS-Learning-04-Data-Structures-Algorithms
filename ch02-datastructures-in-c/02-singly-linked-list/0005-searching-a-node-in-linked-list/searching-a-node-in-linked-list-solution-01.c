@@ -4,7 +4,7 @@
 
 // Best Case Time Complexity = O(1) => when node to be found is head node
 // Worst Case Time Complexity = O(N) => when node to be found is last node or node not found
-// Space Complexity = O(N)
+// Space Complexity = O(1)
 
 #include <stdio.h>
 #include <stdlib.h>

@@ -2,8 +2,8 @@
 
 # Inserts a node at the beginning of a linked list
 
-# Time Complexity = O(1)
-# Space Complexity = O(N)
+# Time Complexity = O(1) since no traversal of linked list
+# Space Complexity = O(1)
 
 class Node:
     def __init__(self, data):
