@@ -1,5 +1,5 @@
 /*
-** Creates a linked list with 3 nodes
+** Creates a singly linked list with 3 nodes
 ** and prints data of each node
 ** by traversing the linked list.
 */
