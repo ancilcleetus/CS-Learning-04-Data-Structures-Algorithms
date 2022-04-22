@@ -21,8 +21,7 @@ This project is an effort to document my learning journey in Data Structures and
 |6|[Singly Linked List](/ch02-datastructures-in-c/02-singly-linked-list)|[Insertion of node at the end of a Linked List](https://log2base2.com/courses/data-structures-in-c/inserting-a-node-at-end-linked-list)|[Solution 01 - C](/ch02-datastructures-in-c/02-singly-linked-list/0003-insertion-of-node-at-end-of-linked-list/insertion-of-node-at-end-of-linked-list-solution-01.c)|O(N) since traversal of linked list|O(1)|Easy|
 |7|[Singly Linked List](/ch02-datastructures-in-c/02-singly-linked-list)|[Deletion of node from the Linked List](https://log2base2.com/courses/data-structures-in-c/deleting-node-linked-list)|[Solution 01 - C](/ch02-datastructures-in-c/02-singly-linked-list/0004-deletion-of-node-from-linked-list/deletion-of-node-from-linked-list-solution-01.c)|Best Case (deletion of head node) -> O(1), Worst Case (deletion of last node) -> O(N)|O(1)|Easy|
 |8|[Singly Linked List](/ch02-datastructures-in-c/02-singly-linked-list)|[Searching a node in Linked List](https://log2base2.com/courses/data-structures-in-c/searching-a-node-in-singly-linked-list)|[Solution 01 - C](/ch02-datastructures-in-c/02-singly-linked-list/0005-searching-a-node-in-linked-list/searching-a-node-in-linked-list-solution-01.c)|Best Case (node to be found is head node) -> O(1), Worst Case (node not found or node to be found is last node) -> O(N)|O(1)|Easy|
-
-
+|9|[Doubly Linked List](/ch02-datastructures-in-c/03-doubly-linked-list)|[Creation of Doubly Linked List](https://log2base2.com/courses/data-structures-in-c/introduction-to-doubly-linked-list)|[Solution 01 - C](/ch02-datastructures-in-c/03-doubly-linked-list/0001-creation-of-doubly-linked-list/creation-of-doubly-linked-list-solution-01.c)|O(N)|O(N)|Easy|
 
 
 
